@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css?family=Anton|Maven+Pro');
+@import url('https://fonts.googleapis.com/css?family=Russo+One');
+@import url('https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei');
+@import url('https://fonts.googleapis.com/css?family=Coiny|Notable');
+@import url('https://fonts.googleapis.com/css?family=Righteous');
+
+html {
+  background: url('images/pattern.jpg') no-repeat center center fixed;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+/*********** GLOBAL **********/
+
+/* .wrapper {
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+} */
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  /* padding-top: 20px; */
+  height: 80px;
+  right: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.4);
+  border-bottom: #11ca9ffd 1px solid;
+}
+
+
+/****************************/
+header nav {
+  float: right;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(75, 13, 63, 0.551);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #11ca9ffd;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px rgb(0, 0, 0);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+
+#EtherLogo {
+  color: #11ca9ffd;
+  font-family: 'Coiny', cursive;
+  text-transform: uppercase;
+  float: left;
+  letter-spacing: 5px;
+  padding-left: 1.5rem;
+
+}
+
+#EtherLogo .io {
+  color: #97b91b;
+  letter-spacing: 2px;
+  font-size: 20px;
+  font-family: 'Maven Pro', sans-serif;
+  
+}
+
+nav ul {
+  text-decoration: none;
+  font-family: 'Maven Pro', sans-serif;
+  text-transform: uppercase;
+  padding-top: 35px;
+}
+
+nav li {
+  display: inline;
+  padding-right: 15px;
+}
+
+nav a {
+  font-size: 1.2rem;
+}
+
+a {
+  color: #11ca9ffd;
+  position: relative;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #89fae0fd;
+}
+
+
+nav a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #11ca9ffd;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
+}
+
+nav a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.bodycontainer {
+  color: #11ca9ffd;
+  padding: 1rem 0 0 1rem;
+  font-family: 'Righteous', cursive;
+  font-size: 2rem;
+  padding-top: 150px;
+  text-align: center;
+}
+
+/* .bodycontainer {
+  color: #11ca9ffd;
+} */
+
+.bodycontainer #supplynum, #Price, #lastblock, #mktcap {
+  color: #97b91b;
+}
+
+
+.blockinfo {
+  /* display: flex; */
+  /* flex-direction: column; */
+  padding: 0;
+  font-family: 'Righteous', cursive;
+  font-size: 16px;
+  padding-top: 15px;
+  /* text-align: center; */
+}
+
+/* #mktcap {
+  display:none;
+} */
+
+
+/********* MEDIA QUERRIES **************/
+
+@media only screen and (max-width: 850px) {
+  
+  footer .footertext {
+    width: 30%;
+  }
+  
+}
+
+@media only screen and (max-width: 800px) {
+
+  footer .footertext {
+    width: 50%;
+  }
+  
+  header {
+    padding-bottom: 40px;
+  }
+
+}
+
+@media only screen and (max-width: 430px) {
+ 
+  footer .footertext {
+    width: 45%;
+    font-size: 1rem;
+    
+  }
+}
